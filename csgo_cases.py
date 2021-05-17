@@ -60,7 +60,7 @@ def float_str(float_val):
 
 def output_to_csv(skin_floats, case_rarity):
     f = open("case_results.csv", "w")
-    f.write("Rarity, Skin, Wear\n")
+    f.write("Rarity, Skin, Float, Wear\n")
     for skin in skin_floats.keys():
         for float_val in skin_floats[skin]:
             f.write(f"{case_rarity[skin]}, {skin}, {float_val}, {float_str(float_val)}\n")
